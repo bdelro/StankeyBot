@@ -1,0 +1,2 @@
+#Ignore the config where password is stored
+config.json
