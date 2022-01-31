@@ -36,6 +36,9 @@ client.on("messageCreate", (message) => {
         message.delete();
         message.channel.send(message.content.toLowerCase().replace("verizon","[redacted]"));
     }
+    if(message.content.toLowerCase().includes("work")){
+        message.react(message.guild.emojis.cache.get('924052408865284126'))
+    }
   });
 // Login to Discord with your client's token
 client.login(token);
